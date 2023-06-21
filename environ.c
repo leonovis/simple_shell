@@ -57,7 +57,6 @@ int _mysetenv(info_t *info)
  */
 int _myunsetenv(info_t *info)
 {
-{
 	int i;
 	if (info->argc == 1)
 	{
