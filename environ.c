@@ -21,6 +21,7 @@ char *_getenv(info_t *info, const char *name)
 {
 	list_t *node = info->env;
 	char *p;
+{
 	while (node)
 	{
 		p = starts_with(node->str, name);
@@ -55,6 +56,7 @@ int _mysetenv(info_t *info)
  *  Return: Always 0
  */
 int _myunsetenv(info_t *info)
+{
 {
 	int i;
 	if (info->argc == 1)
