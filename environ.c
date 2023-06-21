@@ -1,7 +1,4 @@
 #include "main.h"
-/**
- * _myenv - prints the current environment
- */
 int _myenv(info_t *info)
 {
 	print_list_str(info->env);
@@ -21,9 +18,6 @@ char *_getenv(info_t *info, const char *name)
 	}
 	return (NULL);
 }
-/**
- * _mysetenv - Initialize a new environment variable,
- */
 int _mysetenv(info_t *info)
 {
 	if (info->argc != 3)
@@ -35,9 +29,6 @@ int _mysetenv(info_t *info)
 		return (0);
 	return (1);
 }
-/**
- * _myunsetenv - Remove an environment variable
- */
 int _myunsetenv(info_t *info)
 {
 	int i;
@@ -51,7 +42,6 @@ int _myunsetenv(info_t *info)
 		_unsetenv(info, info->argv[i]);
 	return (0);
 }
-
 int populate_env_list(info_t *info)
 {
 	list_t *node = NULL;
