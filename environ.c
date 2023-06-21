@@ -8,7 +8,7 @@ int _myenv(info_t *info)
 	return (0);
 }
 /**
- * _getenv - gets the value of an environ variable 
+ * _getenv - gets the value of an environ variable
  */
 char *_getenv(info_t *info, const char *name)
 {
